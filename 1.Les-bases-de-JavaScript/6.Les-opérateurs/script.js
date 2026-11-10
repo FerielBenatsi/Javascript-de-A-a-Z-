@@ -20,7 +20,6 @@
 
 */
 
-
 /* 
     2. Les opérateurs de comparaison.
 
@@ -31,7 +30,6 @@
     <=  Inférieur ou égal.
     >=  Supérieur ou égal.
 */
-
 
 /* 
     3. Les opérateurs d'égalité.
@@ -44,7 +42,8 @@
     !==  Inégalité stricte.
 */
 
-
+console.log(50 == "50"); // true
+console.log(50 === "50"); // false
 
 /* 
     4. Les opérateurs logiques.
@@ -56,7 +55,6 @@
     !  NON logique
 
 */
-
 
 /* 
     5. Les opérateurs d'affectation.
@@ -72,8 +70,6 @@
     *=, ex num *= 10 équivaut à num = num * 10 // 100
 
 */
-
-
 
 /*
     Il existe beaucoup d'opérateurs plus confidentiels, mais il n'est pas utile de tous les passer en revue à ce stade de votre apprentissage.
