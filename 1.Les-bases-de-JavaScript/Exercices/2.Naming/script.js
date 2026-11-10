@@ -6,43 +6,41 @@
 
 */
 
-    // LET UsErNaMe = "John";     
-    // const _id = 99;
-    // let class = true;
-    // const isAdult = true;
-    // const $card = {name: "card", content: "Lorem ipsum"};
-    // let 1452 = 1452;
-    // const sum41 = "music";
-
-
+// LET UsErNaMe = "John"; 🆘 let
+// const _id = 99; ✅
+// let class = true;🆘🆘 class est un mot reserver
+// const isAdult = true; ✅
+// const $card = {name: "card", content: "Lorem ipsum"};✅
+// let 1452 = 1452; 🆘 on ne commence pas par un hciffre
+// const sum41 = "music"; ✅
 
 /* 
     2. Trouver un bon nom; 
 
     Essayez de trouver un bon nom à ces variables, puis déclarez-les avec ce nom et la valeur correspondante.
 
-    A. Une let qui retourne un booléen en fonction de la présence d'un joueur en ligne.
-    B. Une let qui retourne un booléen en fonction des droits d'un rôle "modérateur".
-    C. Une const qui contient un tableau de nombres représentants des salaires.
-    D. Une let contenant des informations sur la météo du jour.
-    E. Une let qui contient la hauteur d'une page web.
-    F. Une const qui contient un message d'alerte.
+    A. Une let qui retourne un booléen en fonction de la présence d'un joueur en ligne. isOnLine
+    B. Une let qui retourne un booléen en fonction des droits d'un rôle "modérateur". isModerateur
+    C. Une const qui contient un tableau de nombres représentants des salaires. salaries
+    D. Une let contenant des informations sur la météo du jour. currentWeather
+    E. Une let qui contient la hauteur d'une page web. scrollHeight
+    F. Une const qui contient un message d'alerte.  alertMessage  
 
     Même chose pour des fonctions.
 
-    G. Une fonction qui retourne les données d'un utilisateur
-    H. Une fonction qui retourne un booléen si l'utilisateur est adulte.
-    I. Une fonction qui crée un bouton
-    J. Une fonction qui ajoute une animation 
+    G. Une fonction qui retourne les données d'un utilisateur getUserData()
+    H. Une fonction qui retourne un booléen si l'utilisateur est adulte. isAdult()
+    I. Une fonction qui crée un bouton creatButton()
+    J. Une fonction qui ajoute une animation addAnimation()
 */
 
 //A.
 // = true;
-//B. 
+//B.
 // = false;
 //C.
 // = [2450,1850,4712,3254,2000,1578]
-//D. 
+//D.
 /*
  = {
     temperature : 27,
@@ -62,4 +60,3 @@
 /* function xxx(){}*/
 // J
 /* function xxx(){}*/
-
