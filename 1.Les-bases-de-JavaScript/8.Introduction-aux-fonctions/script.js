@@ -16,10 +16,17 @@
   On execute une fonction en utilisant son nom + ()
   Ex : getResults()
 */
+function addition (a,b){
+return a+b;
+}
+console.log(addition(2,3)); // 5
 
 
 
 // Les fonctions sont des objets, même si typeof retourne "function"
+console.log(typeof addition); // function
+
+console.log(addition instanceof Object); // true
 
 // On appelle les functions des "first class objects", car on peut les exécuter.
 
