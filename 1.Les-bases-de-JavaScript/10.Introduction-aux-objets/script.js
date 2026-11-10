@@ -6,15 +6,25 @@
     On parle d'une collection de clés-valeurs. (keyed collection)
 
 */
+const store = {
+  customers : 1000,
+  turnover : 4125000,
+  employees : 3,
+  rent : 2500,
+  // pour les nom on peur faire des string ou des chiffre 0: 23, "c" : "abc"
 
+
+}
 
 // On accède aux valeurs grâce à deux notations, la dot et la bracket notation
 
 // dot notation
 
+console.log(store.customers);
 
 // bracket notation
 
+console.log(store["rent"]);
 
 // On peut modifier la valeur d'une propriété
 
@@ -22,6 +32,8 @@
 // Imbrication d'objets
 
 // C'est assez complexe quand on débute de s'y retrouver, pour l'instant ne vous posez pas trop de question, mais appréciez juste la syntaxe, et tentez de retrouver des valeurs et d'exécuter des fonctions. 
+
+
 
 const player = {
   spells: {
