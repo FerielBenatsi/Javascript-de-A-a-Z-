@@ -6,7 +6,7 @@
     50 === 50     // cette comparaison(expression) retourne true
     "abc"         // Code évalué par votre machine en "abc"(chaîne de caractères)
 
-    Si vous pouvez le console.log(), c'est une expression.
+    ⚠️Si vous pouvez le console.log(), c'est une expression.
     Si ça retourne une erreur, c'est une instruction.
 */
 
@@ -34,7 +34,13 @@ for, do...while, while, for...in/of
 */
 
 // Instruction if
-
+if(50>10){
+    console.log("50 est plus grand que 10");
+}
 // Déclaration de function 
-
+function foo(){
+    return 10*10;
+}
+console.log(foo());
 // Déclaration d'une constante
+const firstName = "Paul";
