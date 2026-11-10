@@ -17,8 +17,10 @@
 
 */
 
+const title = document.querySelector("h1"); // un objet
 
-
+title.textContent = "Le text a ete modifié"; // on modifie la propriété textContent de l'objet title
+title.style.color = "red"; // on modifie la propriété style.color de l'objet title
 
 /* 
   2. Le BOM pour Browser object model, est l'objet global.
@@ -34,3 +36,4 @@
   Et des APIs pratiques comme History pour gérer l'historique.
 */
 
+console.log(window); 
