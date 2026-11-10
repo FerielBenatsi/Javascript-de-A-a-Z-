@@ -10,7 +10,13 @@
 */
 
 function weatherFeeling(temp) {
-
+if (temp<=10){
+  console.log("Il fait froid");
+} else if (temp<=20){
+  console.log("Il fait doux");
+} else {
+  console.log("Il fait chaud");
+}
 }
 
 weatherFeeling(-15)
@@ -53,7 +59,13 @@ const player3 = {
 
 
 function howGoodIsThatPlayer(player){
-
+  if (player.worldCup >= 1 && player.goldenBall >= 2 && player.nationalCup >= 3) {
+    console.log("Niveau exceptionnel");
+  } else if (player.goldenBall >= 1 && player.nationalCup >= 1) {
+    console.log("Bon niveau");
+  } else {
+    console.log("Niveau médiore");
+  }
 }
 howGoodIsThatPlayer(player1)
 howGoodIsThatPlayer(player2)
