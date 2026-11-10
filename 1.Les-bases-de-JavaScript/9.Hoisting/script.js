@@ -11,3 +11,42 @@
     Attention, il n'y a pas de hoisting avec les let & const. 
 */
 
+//⚠️ on peut loger une var avant de la déclarer
+console.log(myVar); // undefined
+var myVar = 10;
+
+console.log(age); //error
+let age = 20; // ReferenceError: Cannot access 'age' before initialization
+// meme chose avec const
+
+//⚠️⚠️⚠️ quand le parser rencontre une var il la met en haut de fichier mais sans luii attribuer une valeur , il lui assigne sa valeur quand il arrive a la ligne de code ou elle est déclarée.
+
+myFunction(); // "foo"
+function myFunction() {
+  console.log("foo");
+}
+// la meme chose il mets toutes les déclarations des functions en haut quand cest declarer 'function"
+
+// ici on bloque le comportement de hoisting
+foo(); // TypeError: foo is not a function
+const foo = function () {
+  console.log("foo");
+};
+
+console.log(function () {
+  console.log("foo");
+}); // ca affiche la fnct , ce nest pas une string mais plutot un objet compelt
+
+const loo = function (param1, param2) {
+  console.log("foo");
+};
+
+loo(); // ca affiche foo
+console.log(loo); // ca affiche la fnct (expression function)
+console.dir(loo); // ca affiche la declaration de la fnct avec ses proprietes  en mode objet 
+
+console.log(function(){
+    console.log("foo");
+}); // ca affiche f anonymous
+
+
