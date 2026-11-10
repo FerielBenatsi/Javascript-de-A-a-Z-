@@ -8,3 +8,13 @@
 */
 
 const tShirtSize = "M";
+switch (tShirtSize) {
+  case "S":
+    console.log("Vous avez choisi un t-shirt de taille S");
+    break;
+  case "M":
+    console.log("Vous avez choisi un t-shirt de taille M");
+    break;
+  default:
+    console.log("Vous avez choisi un t-shirt de taille L");
+}
