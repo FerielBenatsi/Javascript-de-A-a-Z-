@@ -11,5 +11,11 @@
 let isAuthenticated = true;
 const user = {
   name: "Hanz",
-  level: 99
-}
+  level: 99,
+};
+
+//⚠️ le premier est true est le deuxieme est true ca retourne le deuxieme
+console.log(isAuthenticated && user); // { name: "Hanz", level: 99 }
+
+console.log(isAuthenticated || user); // true
+// ⚠️ le premier est true donc il retourne le premier
