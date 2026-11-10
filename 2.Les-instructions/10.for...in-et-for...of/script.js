@@ -14,7 +14,13 @@ const person = {
   weight: 90
 }
 
-
+for(const prop in person){
+  console.log(prop); // name, age, height, weight
+  console.log(person[prop]); // Cyril, 35, 188, 90
+}
 
 const fruits = ["🍓","🍇","🍑","🍎","🥭"]
 
+for(const fruit of fruits){
+  console.log(fruit); // 🍓, 🍇, 🍑, 🍎, 🥭
+}
