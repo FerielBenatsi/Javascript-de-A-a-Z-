@@ -5,7 +5,11 @@
 
 */
 
-// Syntaxe de base 
-
+// Syntaxe de base
+(function () {
+  console.log("hello");
+})();
 
 // Avant l'arrivée de let & const qui règlent les problèmes de portée, on pouvait déclarer des var dans des IIFEE pour éviter de polluer la portée globale.
+
+var banana = "test"; //elle est stocker dans lobjet window a acces publique
