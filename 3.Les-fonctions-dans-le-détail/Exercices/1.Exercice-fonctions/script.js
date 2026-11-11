@@ -9,7 +9,11 @@
     Écrivez cette fonction sous la forme d'une fonction fléchée puis commentez-là et écrivez-là sous la forme d'une fonction classique.  
 */
 
+function dividedBy10(a) {
+  return a / 10;
+}
 
+const dividedB10 = (a) => a / 10;
 
 /* 
     2. this weather
@@ -22,9 +26,10 @@
 const weather = {
   city: "London",
   temp: 16,
-}
-
-
+  getFahrenheit: function () {
+    return this.temp * 1.8 + 32;
+  },
+};
 
 /* 
   3. Ordre supérieur.
@@ -35,26 +40,35 @@ const weather = {
 */
 
 const travelers = [
-{
-  name: "Jean",
-  nationality: "FR"
-},
-{
-  name: "Victor",
-  nationality: "FR"
-},
-{
-  name: "Paul",
-  nationality: "FR"
-},
-{
-  name: "Jack",
-  nationality: "EN"
-},
-{
-  name: "Giulia",
-  nationality: "IT"
-},
-]
+  {
+    name: "Jean",
+    nationality: "FR",
+  },
+  {
+    name: "Victor",
+    nationality: "FR",
+  },
+  {
+    name: "Paul",
+    nationality: "FR",
+  },
+  {
+    name: "Jack",
+    nationality: "EN",
+  },
+  {
+    name: "Giulia",
+    nationality: "IT",
+  },
+];
 
+function areFrom(arr, callback) {
+  for (value of arr) {
+    if (!callback(value)) {
+      return false;
+    }
+  }
+  return true;
+}
 
+console.log(travelers, (tr) => tr.nationality === "FR");
