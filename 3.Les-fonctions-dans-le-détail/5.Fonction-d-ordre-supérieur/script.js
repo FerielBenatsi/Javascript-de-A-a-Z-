@@ -8,51 +8,72 @@
 
 // codons une fonction .filter() personnalisée
 
+const salaries = [1200, 5000, 4000, 2500, 3450, 1800];
 
-const salaries = [1200,5000,4000,2500,3450,1800]
+function customFilter(arr, callback) {
+  const filteredArray = [];
+
+  for (const value of arr) {
+    if (callback(value)) {
+      filteredArray.push(value);
+    }
+  }
+  return filteredArray;
+}
+console.log(
+  customFilter(salaries, salaire => 
+    salaire > 3000
+  )
+);
+
+
+
+
 
 
 const countries = [
-    {
-        name: "Japan",
-        gdp: 4941
-    },
-    {
-        name: "Germany",
-        gdp: 4260
-    },
-    {
-        name: "South Korea",
-        gdp: 1811
-    },
-    {
-        name: "India",
-        gdp: 3176
-    },
-    {
-        name: "Canada",
-        gdp: 1988
-    },
-]
+  {
+    name: "Japan",
+    gdp: 4941,
+  },
+  {
+    name: "Germany",
+    gdp: 4260,
+  },
+  {
+    name: "South Korea",
+    gdp: 1811,
+  },
+  {
+    name: "India",
+    gdp: 3176,
+  },
+  {
+    name: "Canada",
+    gdp: 1988,
+  },
+];
+
+
+
 
 
 // Exemple avec un composant d'ordre supérieur
-
 export default function Private() {
-    // On exécute useContext pour savoir si l'utilisateur est connecté.
-    const {currentUser} = useContext(UserContext)
-  
-    // Si il n'est pas connecté, on retourne à la page d'accueil.
-    // <Navigate />, in fine, est une fonction. 
-    if(!currentUser) {
-      return <Navigate to="/" />
-    }
-  
-    // Sinon on les emmène vers une page privé.
-    // <Outlet />, in fine, est une fonction. 
-    return (
-      <div className="container">
-        <Outlet />
-      </div>
-    )
+  // On exécute useContext pour savoir si l'utilisateur est connecté.
+  const { currentUser } = useContext(UserContext);
+
+  // Si il n'est pas connecté, on retourne à la page d'accueil.
+  // <Navigate />, in fine, est une fonction.
+  if (!currentUser) {
+    return <Navigate to="/" />;
   }
+
+  // Sinon on les emmène vers une page privé.
+  // <Outlet />, in fine, est une fonction.
+  return (
+    <div className="container">
+      <Outlet />
+    </div>
+  );
+}
